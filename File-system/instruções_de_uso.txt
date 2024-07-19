@@ -1,0 +1,14 @@
+AS INSTRUÇÕES ABAIXO SERVEM COMO GUIA PARA A UTILIZAÇÃO DO SISTEMA DE ARQUIVOS DESSA PASTA:
+
+1. O arquivo "formatador_sistema_de_arquivos.c" cria e formata o disco que se chamará disk_image.bin
+    a.  Sua compilação deve ser feita usando o seguinte cmd: "gcc formatador_sistema_de_arquivos.c -o form -lm"
+        i. Após, sua execução será feita através de "./form <numero de setores que você deseja no disco>
+    b. Se o programa for executado novamente, ele sobreescreverá a imagem anterior
+
+2. O arquivo "funcionalidades.cpp" realiza as operações descritas na especificação.
+    a. Sua compilação deve ser feita com: "g++ funcionalidades.cpp -o funcionalidades"
+        i. A escolha da operação é feita pela escolha de seu respectivo número, que será listado quando sua execução for feita
+    b. Sua execução é feita por meio de "./funcionalidades"
+
+OBSERVAÇÕES:
+- Caso a imagem esteja vazia (não formatada), pode ocorrer segmentation fault ou entrar em um loop.
